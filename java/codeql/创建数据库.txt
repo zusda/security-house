@@ -1,0 +1,5 @@
+codeql database create  java-database  --language="java"  --command="mvn clean install --file pom.xml" --source-root=~/CodeQL/micro-service-seclab/
+
+
+
+codeql database create  java-database  --language="java"  --command="mvn -e clean install -Dmaven.test.skip=true  -Drat.skip=true -t toolchains-sample-win2.xml" --source-root=~/CodeQL/micro-service-seclab/
